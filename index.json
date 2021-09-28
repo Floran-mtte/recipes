@@ -16,8 +16,8 @@
         "dev-name": "5.4",
         "splits": {
             "fnacdarty/user-bundle": [
-                "1.0",
-            ],
+                "1.0"
+            ]
         }
     },
     "branch": "master",
