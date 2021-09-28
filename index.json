@@ -1,0 +1,29 @@
+{
+    "aliases": {
+        "user-bundle": "fnacdarty/user-bundle"
+    },
+    "recipes": {
+        "fnacdarty/user-bundle": [
+            "1.0"
+        ]
+    },
+    "versions": {
+        "lts": "4.4",
+        "stable": "5.3",
+        "next": "5.4",
+        "previous": "5.2",
+        "dev": "5.4",
+        "dev-name": "5.4",
+        "splits": {
+            "fnacdarty/user-bundle": [
+                "1.0",
+            ],
+        }
+    },
+    "branch": "master",
+    "is_contrib": false,
+    "_links": {
+        "repository": "http://mwcsrec2.intranet.darty.fr/api-service/recipes",
+        "recipe_template": "http://mwcsrec2.intranet.darty.fr/api-service/recipes/-/raw/master/{package_dotted}.{version}.json"
+    }
+}

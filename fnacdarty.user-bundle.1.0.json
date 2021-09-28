@@ -1,0 +1,43 @@
+{
+    "manifests": {
+        "fnacdarty/user-bundle": {
+            "manifest": {
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "bundles": {
+                    "FnacDarty\\UserBundle\\UserBundle::class": [
+                        "all"
+                    ]
+                },
+                "post-install-output": [
+                    "<bg=blue;fg=white>              </>",
+                    "<bg=blue;fg=white> What's next? </>",
+                    "<bg=blue;fg=white>              </>",
+                    "",
+                    "  * <fg=blue>Run</> your application:",
+                    "    1. Edit the config/packages/user_bundle.yaml with your routes",
+                    "    2. Edit the USER_API env to match local, staging or production User API",
+                    "    3. Add the user_bundle as a provider inside security.yaml",
+                    "",
+                    "  * <fg=blue>Read</> the documentation at <comment>http://mwcsrec2.intranet.darty.fr/api-service/user-bundle</>"
+                ],
+                "env": {
+                    "API_USER_ENDPOINT": "Insert the User API endpoint here"
+                }
+            },
+            "files": {
+                "config/packages/user_bundle.yaml": {
+                    "contents": [
+                        "user_bundle:",
+                        "    routes:",
+                        "        success_login: dashboard_route",
+                        "        login_form: login_route",
+                        ""
+                    ],
+                    "executable": false
+                }
+            }
+        }
+    }
+}
