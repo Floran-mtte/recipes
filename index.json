@@ -23,7 +23,7 @@
     "branch": "master",
     "is_contrib": false,
     "_links": {
-        "repository": "http://mwcsrec2.intranet.darty.fr/api-service/recipes",
-        "recipe_template": "http://mwcsrec2.intranet.darty.fr/api-service/recipes/-/raw/master/{package_dotted}.{version}.json"
+        "repository": "https://github.com/floran-mtte/recipes",
+        "recipe_template": "https://api.github.com/repos/floran-mtte/recipes/contents/{package_dotted}.{version}.json?ref=master"
     }
 }
